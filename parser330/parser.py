@@ -43,9 +43,9 @@ class Parser(object):
     def parse(self, tweet):
         matches = {
             'tweet': self.tweet,
-            'user(s)': self.get_users(tweet),
-            'hashtag(s)': self.get_hashtag(tweet),
-            'url(s)': self.get_url(tweet)
+            'user': self.get_users(tweet),
+            'hashtag': self.get_hashtag(tweet),
+            'url': self.get_url(tweet)
         }
         return matches 
 
