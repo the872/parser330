@@ -41,8 +41,13 @@ class Parser(object):
                                     re.IGNORECASE)
 
     def parse(self, tweet):
-
-        return None
+        matches = {
+            'tweet': self.tweet,
+            'user(s)': self.get_users(tweet),
+            'hashtag(s)': self.get_hashtag(tweet),
+            'url(s)': self.get_url(tweet)
+        }
+        return matches 
 
     def get_users(self, tweet):
         matches = re.findall(self.USERNAME_REGEX, tweet)
