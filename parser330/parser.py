@@ -39,22 +39,17 @@ class Parser(object):
                           PATH_ENDING_CHARS, QUERY_CHARS, QUERY_ENDING_CHARS),
                        re.IGNORECASE)
 
-        def parse(self, tweet):
-
-            return None
-
-        
-        def get_users(self, tweet):
-
-            return None
-
-
-        def get_hashtag(self, tweet):
-
-            return None
+    def parse(self, tweet):
+        return None
 
         
-        def get_url(self, tweet):
+    def get_users(self, tweet):
+         return None
 
-            return None
+    def get_hashtag(self, tweet):
+         return None
+
+        
+    def get_url(self, tweet):
+         return None
 
