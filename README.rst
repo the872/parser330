@@ -1,13 +1,10 @@
 =========================
- Python Project Template
+ Parser 330 - Twitter
 =========================
 
-.. image:: https://travis-ci.org/seanfisk/python-project-template.png
-   :target: https://travis-ci.org/seanfisk/python-project-template
+This project is a simple way to parse a Twitter tweet and obtain user, hashtag and URL information from within it. A lot of the readme is directly from the python template_ that was used to make give a proper background on all the tools of this project. 
 
-This project provides a best-practices template Python project which integrates several different tools. It saves you work by setting up a number of things, including documentation, code checking, and unit test runners.
-
-As it is an all-in-one solution, the tools used are rather opinionated. They include:
+The template_ that was used came with a lot of tools which came in handy. They include:
 
 * Paver_ for running miscellaneous tasks
 * Setuptools_ for distribution (Setuptools and Distribute_ have merged_)
@@ -17,8 +14,7 @@ As it is an all-in-one solution, the tools used are rather opinionated. They inc
 * mock_ for mocking (not required by the template, but included anyway)
 * tox_ for testing on multiple Python versions
 
-If you are new to Python or new to creating Python projects, see Kenneth Reitz's `Hitchhiker's Guide to Python`_ for an explanation of some of the tools used here.
-
+.. _template: https://github.com/seanfisk/python-project-template
 .. _Paver: http://paver.github.io/paver/
 .. _Setuptools: http://pythonhosted.org/setuptools/merge.html
 .. _Distribute: http://pythonhosted.org/distribute/
@@ -28,41 +24,20 @@ If you are new to Python or new to creating Python projects, see Kenneth Reitz's
 .. _pytest: http://pytest.org/latest/
 .. _mock: http://www.voidspace.org.uk/python/mock/
 .. _tox: http://testrun.org/tox/latest/
-.. _Hitchhiker's Guide to Python: http://docs.python-guide.org/en/latest/
+
 
 Project Setup
 =============
-
-This will be the ``README`` for your project. For now, follow these instructions to get this project template set up correctly. Then, come back and replace the contents of this ``README`` with contents specific to your project.
 
 Instructions
 ------------
 
 #. Clone the template project, replacing ``my-project`` with the name of the project you are creating::
 
-        git clone https://github.com/seanfisk/python-project-template.git my-project
+        git clone https://github.com/the872/parser330.git my-project
         cd my-project
 
-#. Edit the metadata file ``my_module/metadata.py`` to correctly describe your project.
-
-#. Generate files based upon the project metadata you just entered::
-
-        python internal/generate.py
-
-   The generation script will remove all the template files and generate real files, then self-destruct upon completion.
-
-#. Delete the old git history and optionally re-initialize the repository::
-
-        rm -rf .git # or `ri -recurse -force .git' for PowerShell
-        git init
-
-#. Change the license in ``setup.py`` and replace the generated ``LICENSE`` file with the one of your choice. If you would like to use the MIT license, no change is necessary.
-
-#. Change the ``classifiers`` keyword in ``setup.py``. This *will* require modification.
-
-#. Replace this ``README`` with your own text.
-
-#. *(Optional, but good practice)* Create a new virtual environment for your project:
+#. Create a new virtual environment for your project:
 
    With pyenv_ and pyenv-virtualenv_::
 
@@ -90,26 +65,7 @@ Instructions
 
 #. Run the tests::
 
-        paver test_all
-
-   You should see output similar to this::
-
-       $ paver test_all
-       ---> pavement.test_all
-       No style errors
-       ========================================= test session starts =========================================
-       platform darwin -- Python 2.7.3 -- pytest-2.3.4
-       collected 5 items
-
-       tests/test_main.py .....
-
-       ====================================== 5 passed in 0.05 seconds =======================================
-         ___  _   ___ ___ ___ ___
-        | _ \/_\ / __/ __| __|   \
-        |  _/ _ \\__ \__ \ _|| |) |
-        |_|/_/ \_\___/___/___|___/
-
-   The substitution performed is rather naive, so some style errors may be reported if the description or name cause lines to be too long. Correct these manually before moving to the next step. If any unit tests fail to pass, please report an issue.
+        paver test
 
 **Project setup is now complete!**
 
@@ -197,6 +153,8 @@ The template also uses a number of other pieces of software, whose licenses are 
 +------------------------+----------------------------------+
 |argparse (now in stdlib)|Python Software Foundation License|
 +------------------------+----------------------------------+
+|python project template |MIT/X11 License                   |
++------------------------+----------------------------------+
 |Sphinx                  |Simplified BSD License            |
 +------------------------+----------------------------------+
 |Paver                   |Modified BSD License              |
@@ -217,21 +175,7 @@ Issues
 
 Please report any bugs or requests that you have using the GitHub issue tracker!
 
-Development
-===========
-
-If you wish to contribute, first make your changes. Then run the following from the project root directory::
-
-    source internal/test.sh
-
-This will copy the template directory to a temporary directory, run the generation, then run tox. Any arguments passed will go directly to the tox command line, e.g.::
-
-    source internal/test.sh -e py27
-
-This command line would just test Python 2.7.
-
 Authors
 =======
 
-* Sean Fisk
-* Benjamin Schwarze
+* Aid Idrizovic 
