@@ -2,7 +2,7 @@
  Parser 330 - Twitter
 =========================
 
-This project is a simple way to parse a Twitter tweet and obtain user, hashtag and URL information from within it. A lot of the readme is directly from the python template_ that was used to make give a proper background on all the tools of this project. 
+This project is a simple way to parse a Twitter tweet and obtain user, hashtag and URL information from within it. A lot of the readme is directly from the python template_ that was used to give a proper background on all the tools of this project. 
 
 The template_ that was used came with a lot of tools which came in handy. They include:
 
