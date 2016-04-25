@@ -178,4 +178,4 @@ Please report any bugs or requests that you have using the GitHub issue tracker!
 Authors
 =======
 
-* Aid Idrizovic 
+* Aid Idrizovic
